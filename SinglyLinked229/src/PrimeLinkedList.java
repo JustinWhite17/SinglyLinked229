@@ -42,7 +42,7 @@ public class PrimeLinkedList {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter the value of n: ");
+        System.out.print("Enter a value under a million:  ");
         int n = input.nextInt();
 
         Node head = null;
@@ -74,7 +74,7 @@ public class PrimeLinkedList {
             }
         }
 
-        System.out.print("Prime numbers with digit 3: ");
+        System.out.print("Prime numbers with 3: ");
         Node current = headWithThree;
         while (current != null) {
             System.out.print(current.data + " ");
@@ -83,7 +83,7 @@ public class PrimeLinkedList {
         System.out.println();
 
         int sum = getSum(headWithThree);
-        System.out.println("Sum of prime numbers with digit 3: " + sum);
+        System.out.println("Sum of prime numbers with the number 3: " + sum);
     }
 }
 
